@@ -312,7 +312,7 @@ class Rectangle(namedtuple('_Rectangle', ['x1', 'y1', 'x2', 'y2'])):
         raise NotImplementedError
 
     def __repr__(self):
-        return "<{cls} topleft=({x1!r}, {y1!r}) bottomright=({x2!r}, {y2!r})".format(
+        return "<{cls} topleft=({x1!r}, {y1!r}) bottomright=({x2!r}, {y2!r})>".format(
             cls=self.__class__.__name__,
             x1=self.x1, y1=self.y1,
             x2=self.x2, y2=self.y2)
